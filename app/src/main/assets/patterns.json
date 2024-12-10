@@ -1,0 +1,102 @@
+{
+  "design_patterns": {
+    "creational": [
+      {
+        "name": "Singleton",
+        "description": "Zapewnia, że istnieje tylko jedna instancja klasy i umożliwia globalny dostęp do niej."
+      },
+      {
+        "name": "Factory Method",
+        "description": "Definiuje interfejs do tworzenia obiektów, ale pozwala podklasom decydować, którą klasę instancjonować."
+      },
+      {
+        "name": "Abstract Factory",
+        "description": "Dostarczanie interfejsu do tworzenia rodzin spokrewnionych obiektów bez określania ich konkretnych klas."
+      },
+      {
+        "name": "Builder",
+        "description": "Oddziela konstrukcję złożonych obiektów od ich reprezentacji, dzięki czemu ten sam proces konstrukcji może stworzyć różne reprezentacje."
+      },
+      {
+        "name": "Prototype",
+        "description": "Umożliwia klonowanie obiektów zamiast ich tworzenia od nowa."
+      }
+    ],
+    "structural": [
+      {
+        "name": "Adapter",
+        "description": "Pozwala na współpracę klas o niezgodnych interfejsach, przekształcając jeden interfejs w inny."
+      },
+      {
+        "name": "Bridge",
+        "description": "Oddziela abstrakcję od jej implementacji, co pozwala na ich niezależne zmiany."
+      },
+      {
+        "name": "Composite",
+        "description": "Pozwala grupować obiekty w strukturę drzewiastą, by traktować je jako jeden obiekt."
+      },
+      {
+        "name": "Decorator",
+        "description": "Dynamicznie dodaje nowe funkcjonalności do obiektów bez zmieniania ich kodu."
+      },
+      {
+        "name": "Facade",
+        "description": "Dostarcza uproszczony interfejs do bardziej złożonego systemu."
+      },
+      {
+        "name": "Flyweight",
+        "description": "Redukuje zużycie pamięci poprzez współdzielenie wspólnych elementów między obiektami."
+      },
+      {
+        "name": "Proxy",
+        "description": "Dostarcza zamiennik dla innego obiektu, kontrolując dostęp do niego."
+      }
+    ],
+    "behavioral": [
+      {
+        "name": "Chain of Responsibility",
+        "description": "Przekazuje żądania wzdłuż łańcucha odbiorców, którzy mogą je obsłużyć lub przekazać dalej."
+      },
+      {
+        "name": "Command",
+        "description": "Enkapsuluje żądanie jako obiekt, co pozwala na parametryzowanie i kolejkowanie żądań."
+      },
+      {
+        "name": "Interpreter",
+        "description": "Definiuje gramatykę dla języka i interpretuje zdania w tym języku."
+      },
+      {
+        "name": "Iterator",
+        "description": "Umożliwia sekwencyjne przechodzenie przez elementy kolekcji bez ujawniania jej wewnętrznej struktury."
+      },
+      {
+        "name": "Mediator",
+        "description": "Zapewnia centralny punkt komunikacji między obiektami, eliminując potrzebę bezpośrednich powiązań."
+      },
+      {
+        "name": "Memento",
+        "description": "Zapewnia mechanizm zapisywania i przywracania wcześniejszego stanu obiektu bez ujawniania szczegółów implementacji."
+      },
+      {
+        "name": "Observer",
+        "description": "Definiuje zależność jeden-do-wielu między obiektami, gdzie zmiana stanu jednego obiektu powiadamia wszystkie zależne obiekty."
+      },
+      {
+        "name": "State",
+        "description": "Pozwala obiektowi zmieniać zachowanie w zależności od jego stanu wewnętrznego."
+      },
+      {
+        "name": "Strategy",
+        "description": "Definiuje rodzinę algorytmów, enkapsuluje każdy z nich i umożliwia ich wymianę."
+      },
+      {
+        "name": "Template Method",
+        "description": "Definiuje szkielet algorytmu w metodzie, pozostawiając szczegóły implementacji w podklasach."
+      },
+      {
+        "name": "Visitor",
+        "description": "Oddziela operacje od obiektów, na których te operacje mogą być wykonywane."
+      }
+    ]
+  }
+}

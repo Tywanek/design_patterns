@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Wzorce</string>
+    <string name="loading">Ładowanie...</string>
+    <string name="creational">Creational</string>
+    <string name="structural">Structural</string>
+    <string name="behavioral">Behavioral</string>
+    <string name="error_message">Wystąpił błąd podczas ładowania wzorców</string>
+</resources>
