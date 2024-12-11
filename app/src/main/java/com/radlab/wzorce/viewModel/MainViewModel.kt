@@ -4,7 +4,6 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.radlab.wzorce.data.helper.JsonAssetsHelper
 import com.radlab.wzorce.data.model.DesignPatternsData
-import com.radlab.wzorce.utils.Constant
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -19,8 +18,8 @@ sealed class UiState {
 
 @HiltViewModel
 class MainViewModel @Inject constructor(
-    jsonAssetsHelper: JsonAssetsHelper
-) : ViewModel(), JsonAssetsHelper by jsonAssetsHelper {
+    jsonAssetsHelper: JsonAssetsHelper<DesignPatternsData>
+) : ViewModel(), JsonAssetsHelper<DesignPatternsData> by jsonAssetsHelper {
 
     private val _uiState = MutableStateFlow<UiState>(UiState.Loading)
     val uiState: StateFlow<UiState> = _uiState
@@ -28,7 +27,7 @@ class MainViewModel @Inject constructor(
     fun loadPatterns() {
         viewModelScope.launch {
             _uiState.value =
-                designPatterns(Constant.FILE_NAME).fold(
+                designPatterns().fold(
                     onSuccess = { UiState.Success(it) },
                     onFailure = { UiState.Error })
         }
